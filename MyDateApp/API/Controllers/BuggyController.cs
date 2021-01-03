@@ -1,3 +1,4 @@
+using System;
 using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -11,7 +12,6 @@ namespace API.Controllers
         public BuggyController(DataContext context)
         {
             _context = context;
-
         }
 
         [Authorize]
@@ -44,7 +44,7 @@ namespace API.Controllers
         [HttpGet("bad-request")]
         public ActionResult<string> GetBadRequest()
         {
-            return BadRequest("This was not a good requiest");
+            return BadRequest();
         }
     }
 }
