@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.EntityFrameworkCore;
 
 using API.Entities;
 using API.Interfaces;
 using API.DTOs;
-using AutoMapper.QueryableExtensions;
-using AutoMapper;
 
 namespace API.Data
 {
