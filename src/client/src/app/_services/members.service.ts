@@ -27,4 +27,9 @@ export class MembersService {
       httpOptions
     );
   }
+
+  updateMember(member: Member) {
+    console.log(this.baseUrl);
+    return this.http.put(this.baseUrl + 'users', member);
+  }
 }
