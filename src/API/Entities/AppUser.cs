@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using API.Extensions;
-
 namespace API.Entities
 {
     public class AppUser
